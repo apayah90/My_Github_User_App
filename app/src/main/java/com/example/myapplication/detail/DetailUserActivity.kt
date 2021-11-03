@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.myapplication.R
 import com.example.myapplication.model.User
@@ -33,7 +32,7 @@ class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
         val tvFollowers: TextView = findViewById(R.id.tv_followers)
         val tvRepository: TextView = findViewById(R.id.tv_repository)
 
-        val user = intent.getParcelableExtra<User>(EXTRA_USER) as User
+        val user = intent.getParcelableExtra(EXTRA_USER) as User
         githubUrl = user.githubUrl
         Glide.with(this@DetailUserActivity)
             .load(this@DetailUserActivity.resources.getIdentifier(user.avatar,"drawable",this@DetailUserActivity.packageName))

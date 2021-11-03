@@ -2,10 +2,8 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.content.res.Configuration
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.*
 import com.example.myapplication.adapter.ListUserAdapter
 import com.example.myapplication.detail.DetailUserActivity
@@ -15,12 +13,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var rvUsers: RecyclerView
-    private val list = ArrayList<User>();
+    private val list = ArrayList<User>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        rvUsers = findViewById(R.id.rv_users);
+        rvUsers = findViewById(R.id.rv_users)
         rvUsers.setHasFixedSize(true)
         list.addAll(listUsers)
         showRecyclerUser()

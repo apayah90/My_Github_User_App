@@ -1,12 +1,10 @@
 package com.example.myapplication.adapter
 
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.myapplication.R
@@ -24,7 +22,6 @@ class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
         var ivProfileImage: ImageView = itemView.findViewById(R.id.iv_profile_image)
         var tvUsername: TextView = itemView.findViewById(R.id.tv_username)
         var tvName: TextView = itemView.findViewById(R.id.tv_name)
-        var clLayout: ConstraintLayout = itemView.findViewById(R.id.cl)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListUserViewHolder {
@@ -33,7 +30,7 @@ class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
     }
 
     override fun onBindViewHolder(holder: ListUserViewHolder, position: Int) {
-        val (username, name, location, repository, company, followers, following, avatar) = listUser[position]
+        val (username, name, _, _, _, _, _, avatar) = listUser[position]
 
         Glide.with(holder.itemView.context)
                 .load(holder.itemView.context.resources.getIdentifier(avatar,"drawable",holder.itemView.context.packageName))

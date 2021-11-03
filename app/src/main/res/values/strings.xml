@@ -128,4 +128,5 @@
     <string name="repository">Repository</string>
     <string name="splash">GitHub User App \n Created by Diyat</string>
     <string name="github_logo">Github Logo</string>
+    <string name="icon_share">Icon Share</string>
 </resources>
