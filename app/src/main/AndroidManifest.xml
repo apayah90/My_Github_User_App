@@ -11,21 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".splashscreen.SplashScreenActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".GithubMainActivity"
+            android:label="@string/title_activity_github_main"
+            android:theme="@style/Theme.MyGithubApplication"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".splashscreen.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
         <activity
             android:name=".detail.DetailUserActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.MyGithubApplication">
-
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MyGithubApplication"></activity>
     </application>
 
 </manifest>

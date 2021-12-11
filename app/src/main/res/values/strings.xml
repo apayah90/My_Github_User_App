@@ -129,4 +129,18 @@
     <string name="splash">GitHub User App \n Created by Diyat</string>
     <string name="github_logo">Github Logo</string>
     <string name="icon_share">Icon Share</string>
+    <string name="search">Search</string>
+    <string name="title_activity_github_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_most_stars">Most stars</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="title">Judul</string>
+    <string name="description">Description</string>
+    <string name="review">Review</string>
+    <string name="write_your_review_here">Write your review here..</string>
+    <string name="send">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
